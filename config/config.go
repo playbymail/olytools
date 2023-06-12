@@ -18,6 +18,12 @@ type Config struct {
 	Env struct {
 		Environment string
 	}
+	Convert struct {
+		Type   string
+		Import string
+		Export string
+		Log    string
+	}
 	Random struct {
 		Seed int64
 	}

@@ -8,10 +8,10 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var versionCmd = &cobra.Command{
-	Use:   "version",
-	Short: "show application version",
-	Long:  `Show application version.`,
+var convertCmd = &cobra.Command{
+	Use:   "convert",
+	Short: "convert application data",
+	Long:  `Convert application data.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Printf("%s\n", toolsCfg.Version)
 	},
